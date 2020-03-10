@@ -17,6 +17,21 @@ public class ControlDeTrazas implements DirectrizControlDeTrazas {
 
 	@Autowired
 	private ITrazaRepository repositorio;
+	
+
+	public ControlDeTrazas(ITrazaRepository repositorio) {
+		this.repositorio = repositorio;
+	}
+
+
+
+
+	public ControlDeTrazas() {
+		
+	}
+
+
+
 
 	@Override
 	public boolean almacenarTraza(String cedula) {
